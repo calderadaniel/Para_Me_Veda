@@ -1,0 +1,93 @@
+# 🌳❤ Árbol del Amor — Valentine Tree
+
+Una animación web romántica hecha con HTML5 Canvas, donde un corazón cae al suelo, brota un árbol y florece llenándose de pétalos en forma de corazón.
+
+## ✨ Demo
+
+> Sube el proyecto a **GitHub Pages** y obtendrás un link público gratuito.  
+> Ver instrucciones de despliegue más abajo.
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+proyecto-amor/
+├── index.html                        ← Página principal (ábrela en el navegador)
+├── style.css                         ← Estilos visuales
+├── img/
+│   └── icon.png                      ← Ícono de la pestaña del navegador
+└── js/
+    ├── tree.js                       ← Clases: Tree, Branch, Bloom, Seed
+    ├── functions.js                  ← Utilidades: typewriter, contador, resize
+    ├── script.js                     ← Orquestador principal de la animación
+    ├── love.js                       ← Módulo raíz de Jscex
+    ├── jscex.min.js                  ← Motor de coroutinas asíncronas
+    ├── jscex-parser.js               ← Parser de Jscex
+    ├── jscex-jit.js                  ← JIT de Jscex
+    ├── jscex-builderbase.min.js      ← Base de builders de Jscex
+    ├── jscex-async.min.js            ← Módulo async de Jscex
+    └── jscex-async-powerpack.min.js  ← Extensiones async de Jscex
+```
+
+---
+
+## 🚀 Cómo usar localmente
+
+1. Descarga o clona este repositorio:
+   ```bash
+   git clone https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+   ```
+2. Abre el archivo `index.html` directamente en tu navegador.  
+   *(No necesitas servidor local — funciona con doble clic)*
+
+---
+
+## 🌐 Publicar en GitHub Pages (link público gratis)
+
+1. Sube todos los archivos a un repositorio de GitHub.
+2. Ve a **Settings → Pages**.
+3. En *Source*, selecciona la rama `main` y la carpeta `/ (root)`.
+4. Haz clic en **Save**.
+5. En unos minutos tendrás un link del tipo:  
+   `https://TU-USUARIO.github.io/TU-REPOSITORIO/`
+
+---
+
+## 🎨 Personalización
+
+### Cambiar el mensaje de amor
+Edita el bloque `<div id="code">` en `index.html`:
+```html
+<div id="code">
+  <p>Tu mensaje personalizado aquí.</p>
+</div>
+```
+
+### Cambiar la fecha de aniversario
+En `js/script.js`, busca y edita estas líneas:
+```js
+var together = new Date();
+together.setFullYear(2025, 1, 14);  // Año, Mes (0=enero), Día
+```
+
+### Cambiar colores del árbol y las flores
+En `js/tree.js` puedes modificar los colores RGB del árbol y las flores.
+
+---
+
+## 🛠 Tecnologías
+
+| Tecnología | Uso |
+|---|---|
+| HTML5 Canvas | Dibujo del árbol y animaciones |
+| CSS3 | Estilos y layout |
+| JavaScript (ES5) | Lógica de animación |
+| [jQuery 3.7](https://jquery.com/) | Manipulación del DOM (cargado desde CDN) |
+| [Jscex](https://github.com/JeffreyZhao/jscex) | Coroutinas asíncronas para la animación secuencial |
+
+---
+
+## 📄 Licencia
+
+Uso libre para proyectos personales. Si lo compartes, ¡una estrella ⭐ en el repo es muy apreciada!
